@@ -51,7 +51,7 @@ HELM_DECKS_ARGS      = # --set image.tag=${YOUR_VERSION_HERE}
 HELM_KAHM_ARGS       = # --set image.tag=${YOUR_VERSION_HERE}
 HELM_DECKS_SUPPORT_STORE_ARGS      = # --set decks-support-store.image.tag=${YOUR_VERSION_HERE}
 SED_INPLACE         := -i
-ENABLE_STDOUT_LOGS_COLLECTION   := false
+ENABLE_STDOUT_LOGS_COLLECTION   := true
 
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
