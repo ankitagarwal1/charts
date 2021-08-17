@@ -35,4 +35,5 @@ resources:
     memory: 2Gi
     ephemeral-storage: 10Gi
   limits:
+    memory: 2Gi
     ephemeral-storage: 20Gi
