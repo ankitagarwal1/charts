@@ -1,0 +1,12 @@
+- description: "Capacity Usage for object store error"
+  name: "CAPACITY_USAGE_FOR_OBJECT_STORE_ERROR"
+  defaultAutoClearTimeOut: 900
+  issueCategory: Auto
+  matchOnList:
+    - matchon:
+        # ERROR
+        - label: SymptomID
+          value: OBJST-13003
+  notifiers:
+    - objectscale-snmp-notifier
+
