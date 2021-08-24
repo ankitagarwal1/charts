@@ -15,5 +15,6 @@
           value: OBJST-13005
   notifiers:
     - objectscale-snmp-notifier
+	- objectscale-supportassist-ese
 
 
