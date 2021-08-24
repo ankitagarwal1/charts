@@ -1,0 +1,19 @@
+- description: "Capacity Usage for object store"
+  name: "CAPACITY_USAGE_FOR_OBJECT_STORE"
+  matchOnList:
+    - matchon:
+        # WARNING
+        - label: SymptomID
+          value: OBJST-13003
+    - matchon:
+        # CRITICAL
+        - label: SymptomID
+          value: OBJST-13004
+    - matchon:
+        # ERROR
+        - label: SymptomID
+          value: OBJST-13005
+  notifiers:
+    - objectscale-snmp-notifier
+
+
