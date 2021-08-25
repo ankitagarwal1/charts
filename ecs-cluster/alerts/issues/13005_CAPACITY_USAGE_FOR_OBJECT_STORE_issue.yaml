@@ -1,5 +1,6 @@
 - description: "Capacity Usage for object store"
   name: "CAPACITY_USAGE_FOR_OBJECT_STORE"
+  issueCategory: Auto
   matchOnList:
     - matchon:
         # INFO
