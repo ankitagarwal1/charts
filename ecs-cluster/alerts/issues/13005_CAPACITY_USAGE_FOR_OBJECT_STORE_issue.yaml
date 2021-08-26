@@ -1,5 +1,5 @@
-- description: "Capacity Usage for object store"
-  name: "CAPACITY_USAGE_FOR_OBJECT_STORE"
+- description: "Capacity Usage for object store error"
+  name: "CAPACITY_USAGE_FOR_OBJECT_STORE_ERROR"
   issueCategory: Auto
   matchOnList:
     - matchon:
@@ -9,7 +9,7 @@
     - matchon:
         # ERROR
         - label: SymptomID
-          value: OBJST-13005
+          value: OBJST-13004
   notifiers:
     - objectscale-snmp-notifier
     - objectscale-supportassist-ese

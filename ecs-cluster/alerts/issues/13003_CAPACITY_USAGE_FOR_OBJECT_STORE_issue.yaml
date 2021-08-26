@@ -13,7 +13,6 @@
     - matchon:
         # CRITICAL
         - label: SymptomID
-          value: OBJST-13004
+          value: OBJST-13005
   notifiers:
     - objectscale-snmp-notifier
-

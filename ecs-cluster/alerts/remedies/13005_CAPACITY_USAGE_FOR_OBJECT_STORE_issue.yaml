@@ -1,15 +1,4 @@
-- description: "Capacity Usage for object store"
-  name: "CAPACITY_USAGE_FOR_OBJECT_STORE"
-  issueCategory: Auto
-  matchOnList:
-    - matchon:
-        # INFO
-        - label: SymptomID
-          value: OBJST-13006
-    - matchon:
-        # ERROR
-        - label: SymptomID
-          value: OBJST-13005
-  notifiers:
-    - objectscale-snmp-notifier
-    - objectscale-supportassist-ese
+- symptomid: OBJST-13004
+  description: Capacity usage for objectStore exceed error threshold
+  remedies:
+    - Check capacity usage for objectStore
