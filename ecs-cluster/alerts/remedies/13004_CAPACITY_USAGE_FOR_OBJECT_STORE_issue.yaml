@@ -1,4 +1,4 @@
 - symptomid: OBJST-13004
   description: Capacity usage for objectStore exceed error threshold
   remedies:
-    - Check capacity usage for objectStore
+    - Check capacity usage for objectStore， capacity usage has exceed 90%
