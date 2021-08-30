@@ -13,6 +13,7 @@ rules:
   - ""
   resources:
   - persistentvolumeclaims
+  - persistentvolumeclaims/finalizers
   verbs:
   - create
   - get
@@ -24,6 +25,7 @@ rules:
   - ""
   resources:
   - pods
+  - pods/finalizers
   verbs:
   - create
   - delete
@@ -36,6 +38,7 @@ rules:
   - stateful.ecs.dellemc.com
   resources:
   - statefuldaemonsets
+  - statefuldaemonsets/finalizers
   verbs:
   - create
   - delete
