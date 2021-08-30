@@ -10,13 +10,11 @@ metadata:
 {{ include "statefuldaemonset-operator.labels" . | indent 4}}
 rules:
 - apiGroups:
-  - apps
+  - ""
   resources:
-  - statefulsets
-  - statefulsets/finalizers
+  - persistentvolumeclaims
   verbs:
   - create
-  - delete
   - get
   - list
   - patch
@@ -38,7 +36,6 @@ rules:
   - stateful.ecs.dellemc.com
   resources:
   - statefuldaemonsets
-  - statefuldaemonsets/finalizers
   verbs:
   - create
   - delete
