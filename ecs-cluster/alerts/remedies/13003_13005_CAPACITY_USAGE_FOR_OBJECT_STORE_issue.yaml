@@ -1,5 +1,6 @@
 - symptomid: OBJST-13003
-  description: Capacity usage for objectStore exceed warning threshold
+  description: Capacity usage for the object store exceeded the warning threshold
+
   remedies:
     - Check capacity usage for objectStore
 
