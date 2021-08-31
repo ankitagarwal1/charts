@@ -5,6 +5,7 @@
     - Check capacity usage for objectStore
 
 - symptomid: OBJST-13005
-  description: Capacity usage for objectStore exceed critical threshold
+  description: Capacity usage for the object store exceed the critical threshold
+
   remedies:
     - Check capacity usage for objectStore
