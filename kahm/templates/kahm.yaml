@@ -57,6 +57,10 @@ spec:
         resources:
 {{ toYaml .Values.resources | indent 10 }}
         {{- end }}
+{{- if eq .Values.global.platform "Atlantic" }}
+        securityContext:
+          privileged: {{ .Values.securityContext.privileged }}
+{{- end }}
         env:
         - name: POD_NAME
           valueFrom:

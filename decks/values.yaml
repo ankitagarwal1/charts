@@ -85,3 +85,9 @@ healthChecks:
     image:
       repository: objectscale-component-pre-update
       tag: 0.82.0-78.65ca424 # rfw-update-this objectscale-component-pre-update-image
+
+# security context for privileged permissions
+securityContext:
+  fsGroup: 2000
+  runAsNonRoot: true
+  runAsUser: 1000

@@ -25,6 +25,12 @@ spec:
 {{ include "common-lib.vsphere-emm-integrated_annotation" . | indent 8}}
     spec:
       serviceAccountName: "decks"
+{{- if eq .Values.global.platform "Atlantic" }}
+      securityContext:
+        fsGroup: {{ .Values.securityContext.fsGroup }}
+        runAsNonRoot: {{ .Values.securityContext.runAsNonRoot }}
+        runAsUser: {{ .Values.securityContext.runAsUser }}
+{{- end }}
 {{- if .Values.global.registrySecret }}
       imagePullSecrets:
         - name: {{ .Values.global.registrySecret }}

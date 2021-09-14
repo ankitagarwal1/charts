@@ -64,6 +64,16 @@ rules:
   - statefulsets
   verbs:
   - "*"
+{{- if eq .Values.global.platform "Atlantic" }}
+- apiGroups:
+    - policy
+  resourceNames:
+    - {{ .Values.policy.privilegedPolicy }}
+  resources:
+    - podsecuritypolicies
+  verbs:
+    - use
+{{- end}}
 ---
 {{- if eq .Values.global.watchAllNamespaces true }}
 kind: ClusterRoleBinding
